@@ -1,0 +1,7 @@
+{
+  "name": "Stamp Splitter AI",
+  "description": "Automatically detects and crops individual items from a collection photo using Gemini Vision.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
