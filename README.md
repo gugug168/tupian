@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Stamp Splitter AI：把一张藏品照片自动识别并裁成多张单品图。">
+</p>
 
-# Run and deploy your AI Studio app
+React + TypeScript 应用。它先压缩图片供 Gemini Vision 检测对象，再用原始高分辨率图片按检测框裁切结果。
 
-This contains everything you need to run your app locally.
+## 一眼看懂
 
-View your app in AI Studio: https://ai.studio/apps/drive/1fFoj4zmNqMlTwAoXf7yniUEpyfOhLVxS
+| 价值 | 真实证据 |
+| --- | --- |
+| 把一张藏品照片自动识别并裁成多张单品图。 | 上传集合照片 · Gemini Vision · 高分辨率裁切 |
 
-## Run Locally
+## 从这里开始
 
-**Prerequisites:**  Node.js
+```text
+npm install && npm run dev
+```
 
+## 配置
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+应用通过 `API_KEY` 使用 Gemini。请在本地环境中提供自己的密钥，切勿提交密钥文件。
+
+```bash
+npm install
+npm run dev
+```
